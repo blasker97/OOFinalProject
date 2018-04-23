@@ -9,15 +9,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swift handles memory management through a proccess called ARC or Automatic Reference Counting.  This proccess allows for easy memory management for the programmer because Swift will do deallocates and allocates for you.  Swift will not deallocate an object unless it leaves the scope that it is contained in.
 
 **For Example:**
-
+```swift
 let test = Test(number: 1)   // Will not be deallocated until main program is over
 
+vs
+
 while(counter!= 2){
-
-&nbsp;&nbsp;let test = Test(number: 1)  // Will be deallocated after the while loop is over
-
+  let test = Test(number: 1)  // Will be deallocated after the while loop is over
 }
-
+```
 
 Objects in swift go through a 5 stage process after allocation.  The 5 steps are:
 
