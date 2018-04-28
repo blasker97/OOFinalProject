@@ -38,4 +38,4 @@ Objects in swift go through a 5 stage process after allocation.  The 5 steps are
 
 #### **The Bad**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ARC cycle has issues when multithreading occurs and objects are shared across many threads. Deinitalizing objects from multiple threads introduces a whole lot of complexity since the references are split across many threads and the ARC cycle has trouble tracking and keeping up with the references as some are dereferenced at the same time.
