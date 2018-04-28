@@ -1,7 +1,13 @@
 # Memory Management
 
-#### **Kotlin**
-  - 
+## **Kotlin**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kotlin uses the same memory management that Java uses or any other JVM like language uses.  With this it comes with the same garbage collection system that Java uses as well.  This provides a semi safe runtime enviornment that should usually be without memory leaks.  Although the garbage collection system catches most unused refrences memory leaks can still occur.  The best way to prevent this in Kotlin is to make sure you still set references to null once you are done using them.  The reason the Kotlin memory managment system almost identically reflects Java's memory managemnt is to allow for easy code transfer between languages since Kotlin is the successor to Java.
+
+#### **Kotlin/Native**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Kotlin/Native the newer platform developed by jet brains to allow Kotlin to run on many modern applications.  In this platform automatic reference counting is planned to be implemented to address the Null pointer issue that many java applications can run into.  With this it will remove the garbage collector similar to the JVM and will handle memory management in a similar way as Swift.
+
   
 ## **Swift**
 
