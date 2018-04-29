@@ -7,8 +7,11 @@ In Swift, a lambda function is expressed as a closure.  The purpose of a closure
 
 #### **The 3 Forms**
 Closures can take on three forms:
+
 -Global functions are closures that have a name and do not capture any values.
+
 -Nested functions are closures that have a name and can capture values from their enclosing function.
+
 -Closure expressions are unnamed closures written in a lightweight syntax that can capture values from their surrounding context.
 
 #### **Example**
