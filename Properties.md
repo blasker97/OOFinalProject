@@ -53,3 +53,54 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 // Prints "square.origin is now at (10.0, 10.0)"
 ```
 The documentation provided by apple explains how a computed property works extremely well.  As you can see in this example the struct rect has a computed property for its center where it takes in the other information and computes at runtime.  It uses getters and setters to be able to update and change with in an instant and allows for dynamic functionality and applications to be able to react to state and data changes and to not be static or constant.
+
+
+## **Kotlin**
+
+Properties and Kotlin are differentiated by two keywords var which defines a mutable or can be changed property or with val which defines a read only property.
+
+```kotlin
+var name: String =
+var score: Int? =
+val speed: Double =
+```
+
+For val type properties a default getter is consturcted on initalization but does not allow for a setter since these properties are read only
+
+```kotlin
+val simple: Int? // has type Int, default getter, must be initialized in constructor
+val inferredType = 1 // has type Int and a default getter
+```
+
+For a default var property a getter and setter a intialized by default but for a var? property they are implied but must be implemented by the programmer.
+
+```kotlin
+var allByDefault: Int? // error: explicit initializer required, default getter and setter implied
+var initialized = 1 // has type Int, default getter and setter
+```
+
+Kotlin does allow for manipulation of the getter and setter functions which allows you to add or remove functionality from the default getter and setter provided by the language.
+
+```koltin
+var stringRepresentation: String
+    get() = this.toString()
+    set(value) {
+        setDataFromString(value) // parses the string and assigns values to other properties
+    }
+```
+
+#### **Backing Properties**
+
+Kotlin does allow for backing property similar to Java so you can manipulate and accesss public and private properties over many methods.  The way this implemented is shown below.
+
+```kotlin
+private var _table: Map<String, Int>? = null
+public val table: Map<String, Int>
+    get() {
+        if (_table == null) {
+            _table = HashMap() // Type parameters are inferred
+        }
+        return _table ?: throw AssertionError("Set to null by another thread")
+    }
+```
+
