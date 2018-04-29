@@ -1,7 +1,7 @@
 # **Lambda Expresssions or Closures**
 
 
-### **Swift**
+## **Swift**
 
 In Swift, a lambda function is expressed as a closure.  The purpose of a closure is to allow for contained functionality to be easily transfered and used in your code.  They contain many functions and interactions that are shorten and contained for easy reuse and interpratation.
 
@@ -28,7 +28,7 @@ var reversedNames = names.sorted(by: backward)
 In this example it shows how a closure can be used to change functionality of library function to do a desired task.  Here a backward function is defined as a closure and then sent to swift library sorted function but used as its parameter providing it with additional fucntionality.  This shows the benfit of closures and how it can extend functionality and allow for easy code reuse and manipulation.
 
 
-### **Kotlin**
+## **Kotlin**
 
 Kotlin like it predecessor, Java, used the term Lambda to define its form of functional programming.  The first key to Kotlin lambdas is to understand what a higher order function is.
 
