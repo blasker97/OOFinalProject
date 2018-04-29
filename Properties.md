@@ -52,5 +52,4 @@ square.center = Point(x: 15.0, y: 15.0)
 print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 // Prints "square.origin is now at (10.0, 10.0)"
 ```
-The documentation provided by apple explains how a computed value works extremely well.  As you can see in this example the struct rect has a computed property for 
-its center where it takes in the other information and computes at runtime.  It uses getters and setters to be able to update and change with in an instant and allows for dynamic functionality and applications to be able to react to state and data changes and to not be static or constant.
+The documentation provided by apple explains how a computed property works extremely well.  As you can see in this example the struct rect has a computed property for its center where it takes in the other information and computes at runtime.  It uses getters and setters to be able to update and change with in an instant and allows for dynamic functionality and applications to be able to react to state and data changes and to not be static or constant.
