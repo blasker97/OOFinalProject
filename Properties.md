@@ -91,7 +91,7 @@ var stringRepresentation: String
 
 #### **Backing Properties**
 
-Kotlin does allow for backing property similar to Java so you can manipulate and accesss public and private properties over many methods.  The way this implemented is shown below.
+Kotlin does allow for backing property similar to Java so you can manipulate and accesss public and private properties over many methods.  The way this is implemented is shown below.
 
 ```kotlin
 private var _table: Map<String, Int>? = null
