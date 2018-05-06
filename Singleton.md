@@ -41,3 +41,22 @@ Even though Swift makes singletons seem incredibly easy they leave a lot of info
 
 To find out more on how to write singletons this [blog post](https://krakendev.io/blog/the-right-way-to-write-a-singleton) covers many ways on the right and wrong ways to implement singletons.
 
+
+## **Kotlin**
+
+Kotlin does their form of a singleton in versions after Scala in a way called an __object decleration__.  With this they are very easy and are thread safe.  With object decleration it is implied that it is a lazy property and won't be calculated until execution.
+
+```kotlin
+object DataProviderManager {
+    fun registerDataProvider(provider: DataProvider) {
+        // ...
+    }
+
+    val allDataProviders: Collection<DataProvider>
+        get() = // ...
+}
+```
+
+The only downside to this method is that object decleration can not be local but they can be nested.
+
+
