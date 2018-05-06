@@ -13,7 +13,7 @@ Link for implementation: https://developer.apple.com/documentation/foundation/th
 Also it can be done through concurrent programing with GCD.  Apple does a tutorial to show its usage and power here -> https://www.youtube.com/watch?v=zfCZTnEZ6Dw
 
 
-## **Kotlin
+## **Kotlin**
 
 In Kotlin the term for multithreading is __coroutines__.  The difference of a coroutine from your standard thread is it allows provides a way to avoid block a thread and instead implements a suspension feature.
 
