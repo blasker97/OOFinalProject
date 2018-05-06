@@ -19,7 +19,7 @@ In Kotlin the term for multithreading is __coroutines__.  The difference of a co
 
 #### **Suspension**
 
-The idea behind implementing a suspension is when you have to block a thread it usually expensive and can cause a lot of stress in a high load operation.  When using suspension the work load is basically free and does not stress the system.  They are easy to implement and their functionality is can be user controlled by libraries. 
+The idea behind implementing a suspension is when you have to block a thread it usually expensive and can cause a lot of stress in a high load operation.  When using a suspension the work load is basically free and does not stress the system.  They are easy to implement and their functionality is can be user controlled by libraries. 
 
 ##### **Example**
 
