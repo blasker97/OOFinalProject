@@ -13,7 +13,7 @@ class Singleton {
 ///this is guaranteed to be lazily intiliazed once
 ```
 
-In swift you can also manually do a lazy singleton to to lessen the load since the idea behind lazy properties is they are not calculated until the first time they are used.  The way you do that with a singleton is like this.
+In swift you can also manually do a lazy singleton to lessen the load since the idea behind lazy properties is they are not calculated until the first time they are used.  The way you do that with a singleton is like this.
 
 ```swift
 class Singleton {
